@@ -1,0 +1,39 @@
+
+div(ng-controller="battleController as DC")
+    //img(src="../css/GOT_cover.jpg")
+    md-content
+        md-tabs(md-dynamic-height='', md-border-bottom='')
+            md-tab(label='one')
+                md-content.md-padding
+                    h1.md-display-2 Tab One
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.
+            md-tab(label='two')
+                md-content.md-padding
+                    div.layout-column.flex
+                        md-card
+                            md-card-content
+                                div.layout-row.layout-align-start-center
+                                    .md-title Battles
+                                md-divider
+                                div(flex)
+                                    div(layout="row" )
+                                        md-list
+                                            md-list-item(layout="column", layout-align="start center", layout-wrap)
+                                                .md-title-content.layout-padding(flex) Battle name
+                                                md-divider
+                                                .md-title-content.layout-padding(flex) Battle info
+                                                md-divider
+                                                .md-title-content.layout-padding(flex) Attacker
+                                                md-divider
+
+
+                                        md-list()
+                                            md-list-item OLA
+
+
+            md-tab(label='three')
+                md-content.md-padding
+                    h1.md-display-2 Tab Three
+                    p
+                        | Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.

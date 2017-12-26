@@ -1,0 +1,29 @@
+doctype html
+
+html.no-js
+    head
+        title Game of Thrones
+        link(rel="stylesheet", type="text/css", href="libs/angular-material-style.css")
+        link(rel="stylesheet", type="text/css", href="css/style.css")
+
+
+
+    body(ng-app="gameOfThrones", ng-controller="mainController")
+
+        script(src="libs/angular1.6.js")
+        script(src="libs/angular-ui-router.min.js")
+        script(src="libs/angular-material.js")
+        script(src="libs/angular-animate.js")
+        script(src="libs/angular-aria.js")
+
+
+        script(src="app.js")
+        script(src="js/controllers/mainController.js")
+        script(src="js/controllers/battleController.js")
+        script(src="js/services/battleService.js")
+
+        span(ui-sref="dashboard")
+
+        ui-view
+
+
